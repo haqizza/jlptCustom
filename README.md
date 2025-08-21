@@ -21,3 +21,8 @@ A Browser extension for automatic JLPT registration
 7. Upload you photo manually
 8. Scroll to bottom
 9. Complete Registration & Payment
+```
+Note:
+Disable the extension if you want to access the website normally, if not, the extension will run every time you visit the website.
+Don't forget to reactivate again before the alarm time
+```
