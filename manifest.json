@@ -1,0 +1,29 @@
+{
+  "name": "jlptCustom",
+  "description": "jlpt custom extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "bookmarks",
+    "notifications",
+    "alarms",
+    "webNavigation"
+  ],
+  "host_permissions": ["https://*/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://jlptonline.or.id/*"],
+      "js": ["jlpt.js"]
+    }],
+  "commands": {
+  }
+}
